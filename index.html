@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - YouChat AI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="icon" href="asset/imagenes/you.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">YouChat AI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Bienvenido a YouChat AI</h1>
+            <p class="lead">Impulsa tu productividad con YouChat, la IA que trabaja contigo.</p>
+            <img src="asset/imagenes/YouChat.jpg" alt="Descripción de la imagen" class="img-fluid rounded-custom" />
+        </div>
+    </section>
+
+    <section class="content container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="asset/imagenes/img01.jpg" class="card-img-top" alt="Imagen 1">
+                    <div class="card-body">
+                        <p class="card-text">Un asistente de IA: para trabajar o mientras viaja
+                            Obtenga las mismas respuestas interesantes, ya sea que esté en la 
+                            oficina o en movimiento. Haga preguntas de conversación y reciba 
+                            respuestas confiables y prácticas. Y con los modos AI, obtienes las 
+                            respuestas más detalladas posibles, sin importar dónde estés.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="asset/imagenes/lincoln.jpg" class="card-img-top" alt="Imagen 2">
+                    <div class="card-body">
+                        <p class="card-text">¿Tiene preguntas complejas?
+                            Obtenga respuestas directas.
+                            Obtenga respuestas completas con citas creíbles, hallazgos web relevantes 
+                            y medios enriquecidos dinámicos, ¡todo en un solo chat! ¡Continúe con las 
+                            preguntas de seguimiento para profundizar en su tema de interés!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="asset/imagenes/modes.jpg" class="card-img-top" alt="Imagen 3">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Consigue tu asistente personal de IA ahora
+                            Aumente su conocimiento de IA con búsquedas de chat GPT-4, carga de archivos, 
+                            vívidas generaciones de arte de IA, investigación profunda, personalización 
+                            mejorada y más. Todo por un bajo costo mensual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="videos container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hLPEDCpuPxQ?si=ALPwX-uarRVmfBcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sfIhJf0dxsk?si=GwoLdn8K62aTYAXq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Christopher Guillermo Montalvo Montalvo - U22231578</p>
+    </footer>
+
+    <script>
+        $('#videoModal').on('hidden.bs.modal', function () {
+            var videoIframe = $('#videoIframe');
+            var videoSrc = videoIframe.attr('src');
+            videoIframe.attr('src', videoSrc);
+        });
+    </script>
+</body>
+</html>

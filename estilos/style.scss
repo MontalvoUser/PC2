@@ -1,0 +1,95 @@
+$primary-color: #0037ff;
+$secondary-color: #00ff0d;
+$light-color: #ecf0f1; 
+$dark-color: #2c3e50; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, rgb(0, 255, 242), rgba(0, 119, 255, 0.681), rgba(0, 109, 251, 0.8));
+    color: $dark-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero {
+    flex: 1;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.6), rgba(213, 0, 109, 0.6));
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(44, 62, 80, 0.8);
+
+    .nav-link {
+        color: $light-color;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+section {
+    padding: 50px 0;
+
+    &.content {
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: $dark-color;
+
+            .card-title {
+                color: $primary-color;
+            }
+
+            .card-text {
+                color: $dark-color;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: rgba(44, 62, 80, 0.8);
+    color: $light-color;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+
+    p {
+        color: $light-color;
+    }
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.rounded-custom {
+    max-width: 600px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    margin: 10px 0;
+}
